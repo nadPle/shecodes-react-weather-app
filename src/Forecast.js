@@ -13,7 +13,7 @@ function Forecast() {
             src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
           forecastDay.condition.icon
         }.png"
-            alt=""
+            alt="Forecast icon matching current weather"
           />
           <div className="ForecastTemp">
             <span className="ForecastTempHigh" id="ForecastTempHigh">

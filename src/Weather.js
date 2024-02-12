@@ -28,6 +28,7 @@ export default function Weather() {
         className="WeatherIllustration"
         id="WeatherIllustration"
         src="images/few-clouds-day.png"
+        alt="Weather illustration matching the current weather"
       />
 
       <h3 id="City">Solothurn</h3>
