@@ -1,0 +1,64 @@
+.Weather h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+.Weather h3,
+h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.Weather h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.Weather h2 {
+  font-family: "Roboto Serif", serif;
+  margin-bottom: 0;
+}
+
+.Weather h2:first-letter {
+  text-transform: capitalize;
+}
+
+.Weather h3 {
+  font-size: 35px;
+  margin: 10px auto 20px auto;
+}
+
+.Weather h4 {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+.Weather .WeatherIllustration {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+}
+
+.Weather .Unit {
+  display: inline;
+  vertical-align: super;
+  font-size: 25px;
+  color: #212529;
+  text-decoration: none;
+}
+
+.Weather .HumWindElement {
+  display: block;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+.Weather .HumidityElement {
+  margin-right: 10px;
+}
+
+.Weather .WindElement {
+  margin-left: 10px;
+}
