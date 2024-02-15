@@ -7,15 +7,24 @@ function Search() {
     <div className="Search">
       <div className="Flex">
         <form id="EnterCityForm">
-          <input
-            type="search"
-            placeholder="Enter your city here"
-            id="EnteredCity"
-            autocomplete="off"
-          />
-          <input type="submit" value="Search" />
+          <div className="search-bar">
+            <input
+              className="search-input"
+              type="search"
+              placeholder="Enter a city"
+              id="EnteredCity"
+              autocomplete="off"
+            />
+            <input
+              type="submit"
+              value="search"
+              className="search-icon material-symbols-outlined"
+            />{" "}
+          </div>
         </form>
-        <button id="CurrentLocationButton">Use current location</button>
+        <button id="CurrentLocationButton" title="Use current location">
+          <span class="material-symbols-outlined">location_searching</span>
+        </button>
       </div>
     </div>
   );

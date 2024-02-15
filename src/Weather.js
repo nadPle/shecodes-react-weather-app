@@ -6,33 +6,33 @@ export default function Weather() {
   return (
     <div className="Weather">
       <h1>
-        <span className="TemperatureElement" id="TempElement">
+        <span className="temperatureElement" id="tempElement">
           -2
         </span>
-        <small className="Unit">°C </small>
+        <small className="unit">°C </small>
       </h1>
 
-      <small className="HumWindElement">
-        <span className="HumidityElement" id="HumidityElement">
+      <small className="humWindElement">
+        <span className="humidityElement" id="humidityElement">
           Humidity: 84%
         </span>
         |
-        <span className="WindElement" id="WindElement">
+        <span className="windElement" id="windElement">
           Wind: 6 km/h
         </span>
       </small>
 
-      <h2 id="WeatherDescription">Few clouds</h2>
+      <h2 id="weatherDescription">Few clouds</h2>
 
       <img
-        className="WeatherIllustration"
-        id="WeatherIllustration"
+        className="weatherIllustration"
+        id="weatherIllustration"
         src="images/few-clouds-day.png"
         alt="Weather illustration matching the current weather"
       />
 
-      <h3 id="City">Solothurn</h3>
-      <h4 id="EntireCurrentDate">Monday | Feb 12 | 20:33</h4>
+      <h3 id="city">Solothurn</h3>
+      <h4 id="entireCurrentDate">Monday | Feb 12 | 20:33</h4>
     </div>
   );
 }

@@ -1,11 +1,10 @@
 import Search from "./Search";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
-import Footer from "./Footer";
 
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="Container">
@@ -14,12 +13,22 @@ function App() {
             <Search />
             <Weather />
             <Forecast />
-            <Footer />
+            <div className="Footer">
+              <p className="Footnote">
+                <a
+                  className="OpenSourceLink"
+                  href="https://github.com/nadPle/shecodes-react-weather-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open-source code
+                </a>{" "}
+                by Nadine Plepel
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-export default App;

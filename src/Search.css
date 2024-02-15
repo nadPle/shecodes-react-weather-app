@@ -4,29 +4,63 @@
   flex-wrap: wrap;
   margin: 40px 40px 70px auto;
   justify-content: flex-end;
-  align-items: baseline;
+  align-items: center;
   gap: 15px;
 }
 
-.Search #EnteredCity {
-  margin-right: 5px;
-}
-
 .Search #CurrentLocationButton {
-  box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: linear-gradient(to bottom, #f9f9f9 5%, #d3d3d3 100%);
-  border-radius: 8px;
-  border: 1px solid #969696;
   display: inline-block;
   cursor: pointer;
-  color: #3b3b3b;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 3px 10px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #ffffff;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px 10px;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #cbd5e0;
+  line-height: 16px;
+  transition: all 100ms ease-in-out;
 }
+
 .Search #CurrentLocationButton:hover {
-  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
-  background-color: #e9e9e9;
+  background-color: #f0eeee;
+}
+
+.Search .search-bar {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: background 0.25s;
+}
+
+.Search .search-input {
+  font-size: 15px;
+  color: black;
+  margin-left: 8px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.Search .search-icon {
+  color: black;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.Search .search-input::placeholder,
+.Search .search-icon {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 576px) {
+  .Search .Flex {
+    margin: 20px auto 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
 }

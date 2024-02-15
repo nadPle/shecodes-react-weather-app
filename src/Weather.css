@@ -34,13 +34,13 @@ h4 {
   font-size: 20px;
   margin-bottom: 100px;
 }
-.Weather .WeatherIllustration {
+.Weather .weatherIllustration {
   display: block;
   margin: 0 auto;
-  width: 350px;
+  width: 60%;
 }
 
-.Weather .Unit {
+.Weather .unit {
   display: inline;
   vertical-align: super;
   font-size: 25px;
@@ -48,17 +48,23 @@ h4 {
   text-decoration: none;
 }
 
-.Weather .HumWindElement {
+.Weather .humWindElement {
   display: block;
   text-align: center;
   margin-bottom: 35px;
   font-size: 18px;
 }
 
-.Weather .HumidityElement {
+.Weather .humidityElement {
   margin-right: 10px;
 }
 
-.Weather .WindElement {
+.Weather .windElement {
   margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+  .Weather .weatherIllustration {
+    width: 80%;
+  }
 }

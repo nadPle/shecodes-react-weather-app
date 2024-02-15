@@ -32,3 +32,13 @@
     rgb(0, 0, 0, 0) 91.8%
   );
 }
+
+.Footer .Footnote {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.Footer .OpenSourceLink {
+  text-decoration: none;
+  color: rgb(17, 113, 168);
+}

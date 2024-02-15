@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Forecast.css";
 
-function Forecast() {
+export default function Forecast() {
   return (
     <div className="Forecast">
       <div className="WeatherForecast" id="WeatherForecast">
@@ -27,5 +27,3 @@ function Forecast() {
     </div>
   );
 }
-
-export default Forecast;
