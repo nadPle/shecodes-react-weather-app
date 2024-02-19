@@ -1,38 +1,62 @@
-import React from "react";
-
+import React, { useState } from "react";
+import axios from "axios";
 import "./Weather.css";
 
-export default function Weather() {
-  return (
-    <div className="Weather">
-      <h1>
-        <span className="temperatureElement" id="tempElement">
-          -2
-        </span>
-        <small className="unit">°C </small>
-      </h1>
+export default function Weather(props) {
+  const [weatherData, setWeatherData] = useState({ ready: false });
 
-      <small className="humWindElement">
-        <span className="humidityElement" id="humidityElement">
-          Humidity: 84%
-        </span>
-        |
-        <span className="windElement" id="windElement">
-          Wind: 6 km/h
-        </span>
-      </small>
+  function handleResponse(response) {
+    setWeatherData({
+      ready: true,
+      city: response.data.city,
+      temperature: response.data.temperature.current,
+      humidity: response.data.temperature.humidity,
+      wind: response.data.wind.speed,
+      description: response.data.condition.description,
+      icon: response.data.condition.icon,
+      date: "Monday | Feb 12 | 20:33",
+    });
+  }
 
-      <h2 id="weatherDescription">Few clouds</h2>
+  if (weatherData.ready) {
+    return (
+      <div className="Weather">
+        <h1>
+          <span className="temperatureElement" id="tempElement">
+            {Math.round(weatherData.temperature)}
+          </span>
+          <small className="unit">°C </small>
+        </h1>
 
-      <img
-        className="weatherIllustration"
-        id="weatherIllustration"
-        src="images/few-clouds-day.png"
-        alt="Weather illustration matching the current weather"
-      />
+        <small className="humWindElement">
+          <span className="humidityElement" id="humidityElement">
+            Humidity: {weatherData.humidity}%
+          </span>
+          |
+          <span className="windElement" id="windElement">
+            Wind: {Math.round(weatherData.wind)} km/h
+          </span>
+        </small>
 
-      <h3 id="city">Solothurn</h3>
-      <h4 id="entireCurrentDate">Monday | Feb 12 | 20:33</h4>
-    </div>
-  );
+        <h2 id="weatherDescription">{weatherData.description}</h2>
+
+        <img
+          className="weatherIllustration"
+          id="weatherIllustration"
+          src={`images/${weatherData.icon}.png`}
+          alt="Weather illustration matching the current weather"
+        />
+
+        <h3 id="city">{weatherData.city}</h3>
+        <h4 id="entireCurrentDate">{weatherData.date}</h4>
+      </div>
+    );
+  } else {
+    const apiKey = "491037f95bt62c7eo1c6b568c53adb94";
+    let city = props.cityDefault;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+
+    return <p>Loading weather data...</p>;
+  }
 }

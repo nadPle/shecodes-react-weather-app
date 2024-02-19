@@ -13,7 +13,7 @@ function Search() {
               type="search"
               placeholder="Enter a city"
               id="EnteredCity"
-              autocomplete="off"
+              autoComplete="off"
             />
             <input
               type="submit"
@@ -23,7 +23,7 @@ function Search() {
           </div>
         </form>
         <button id="CurrentLocationButton" title="Use current location">
-          <span class="material-symbols-outlined">location_searching</span>
+          <span className="material-symbols-outlined">location_searching</span>
         </button>
       </div>
     </div>

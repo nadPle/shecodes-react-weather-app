@@ -19,9 +19,6 @@ h4 {
 .Weather h2 {
   font-family: "Roboto Serif", serif;
   margin-bottom: 0;
-}
-
-.Weather h2:first-letter {
   text-transform: capitalize;
 }
 

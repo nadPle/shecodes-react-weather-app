@@ -11,7 +11,7 @@ export default function App() {
         <div className="WeatherAppWrapper">
           <div className="WeatherAppDay" id="WeatherAppBox">
             <Search />
-            <Weather />
+            <Weather cityDefault="Solothurn" />
             <Forecast />
             <div className="Footer">
               <p className="Footnote">
