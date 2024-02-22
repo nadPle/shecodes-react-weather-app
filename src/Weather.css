@@ -1,67 +1,70 @@
-.Weather h1,
-h2,
-h3,
-h4 {
-  text-align: center;
+.Weather .Flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 40px 40px 70px auto;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
 }
 
-.Weather h3,
-h4 {
-  font-weight: 300;
-  text-transform: uppercase;
+.Weather #CurrentLocationButton {
+  display: inline-block;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px 10px;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #cbd5e0;
+  line-height: 16px;
+  transition: all 100ms ease-in-out;
 }
 
-.Weather h1 {
-  font-size: 50px;
-  font-weight: bold;
+.Weather #CurrentLocationButton:hover {
+  background-color: #f0eeee;
 }
 
-.Weather h2 {
-  font-family: "Roboto Serif", serif;
-  margin-bottom: 0;
-  text-transform: capitalize;
+.Weather .search-bar {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: background 0.25s;
 }
 
-.Weather h3 {
-  font-size: 35px;
-  margin: 10px auto 20px auto;
+.Weather .search-input {
+  font-size: 15px;
+  color: black;
+  margin-left: 8px;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
-.Weather h4 {
-  font-size: 20px;
-  margin-bottom: 100px;
-}
-.Weather .weatherIllustration {
-  display: block;
-  margin: 0 auto;
-  width: 60%;
+.Weather .search-icon {
+  color: black;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
-.Weather .unit {
-  display: inline;
-  vertical-align: super;
-  font-size: 25px;
-  color: #212529;
-  text-decoration: none;
+.Weather .search-input::placeholder,
+.Weather .search-icon {
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.Weather .humWindElement {
-  display: block;
-  text-align: center;
-  margin-bottom: 35px;
-  font-size: 18px;
-}
-
-.Weather .humidityElement {
-  margin-right: 10px;
-}
-
-.Weather .windElement {
-  margin-left: 10px;
+.LoadingData {
+  margin-top: 50px;
 }
 
 @media (max-width: 576px) {
-  .Weather .weatherIllustration {
-    width: 80%;
+  .Weather .Flex {
+    margin: 20px auto 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
   }
 }

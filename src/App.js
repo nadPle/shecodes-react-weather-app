@@ -1,4 +1,3 @@
-import Search from "./Search";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
 
@@ -10,7 +9,6 @@ export default function App() {
       <div className="Container">
         <div className="WeatherAppWrapper">
           <div className="WeatherAppDay" id="WeatherAppBox">
-            <Search />
             <Weather cityDefault="Solothurn" />
             <Forecast />
             <div className="Footer">

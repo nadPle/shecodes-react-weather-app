@@ -1,0 +1,67 @@
+.WeatherInfo h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+.WeatherInfo h3,
+h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.WeatherInfo h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.WeatherInfo h2 {
+  font-family: "Roboto Serif", serif;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.WeatherInfo h3 {
+  font-size: 35px;
+  margin: 10px auto 20px auto;
+}
+
+.WeatherInfo h4 {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+.WeatherInfo .weatherIllustration {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.WeatherInfo .unit {
+  display: inline;
+  vertical-align: super;
+  font-size: 25px;
+  color: #212529;
+  text-decoration: none;
+}
+
+.WeatherInfo .humWindElement {
+  display: block;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+.WeatherInfo .humidityElement {
+  margin-right: 10px;
+}
+
+.WeatherInfo .windElement {
+  margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+  .WeatherInfo .weatherIllustration {
+    width: 80%;
+  }
+}
