@@ -1,5 +1,4 @@
-.WeatherInfo h1,
-h2,
+.WeatherInfo h2,
 h3,
 h4 {
   text-align: center;
@@ -9,11 +8,6 @@ h4 {
 h4 {
   font-weight: 300;
   text-transform: uppercase;
-}
-
-.WeatherInfo h1 {
-  font-size: 50px;
-  font-weight: bold;
 }
 
 .WeatherInfo h2 {
@@ -35,14 +29,6 @@ h4 {
   display: block;
   margin: 0 auto;
   width: 60%;
-}
-
-.WeatherInfo .unit {
-  display: inline;
-  vertical-align: super;
-  font-size: 25px;
-  color: #212529;
-  text-decoration: none;
 }
 
 .WeatherInfo .humWindElement {

@@ -1,0 +1,21 @@
+.WeatherTemperature h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.WeatherTemperature .unit {
+  display: inline;
+  vertical-align: super;
+  font-size: 22px;
+  color: #212529;
+}
+
+.WeatherTemperature .unit a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.WeatherTemperature .unit a:hover {
+  text-decoration: underline;
+}
