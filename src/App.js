@@ -1,5 +1,4 @@
 import Weather from "./Weather";
-import Forecast from "./Forecast";
 
 import "./App.css";
 
@@ -10,7 +9,6 @@ export default function App() {
         <div className="WeatherAppWrapper">
           <div className="WeatherAppDay" id="WeatherAppBox">
             <Weather cityDefault="Solothurn" />
-            <Forecast />
             <div className="Footer">
               <p className="Footnote">
                 <a

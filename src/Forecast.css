@@ -6,14 +6,28 @@
   padding: 0 50px;
 }
 
-.Forecast .ForecastIcon {
+.Forecast .forecastIcon {
   width: 90px;
   margin-bottom: 8px;
 }
-.Forecast .ForecastTempHigh {
+.Forecast .forecastTempHigh {
   font-weight: bold;
 }
 
-.Forecast .ColSM {
-  margin-bottom: 20px;
+.Forecast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-size: 18px;
+  padding: 0 40px;
+}
+
+@media (max-width: 576px) {
+  .Forecast {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 10px;
+  }
 }
