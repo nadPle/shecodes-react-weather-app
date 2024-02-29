@@ -20,6 +20,8 @@ export default function Weather(props) {
       icon: response.data.condition.icon,
       date: new Date(response.data.time * 1000),
     });
+
+    props.onTimeUpdate(new Date(response.data.time * 1000));
   }
 
   function search() {
