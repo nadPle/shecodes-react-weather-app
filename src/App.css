@@ -3,12 +3,12 @@
   text-align: center;
 }
 
-.App .WeatherAppWrapper {
+.App .weatherAppWrapper {
   max-width: 700px;
   margin: 30px auto;
 }
 
-.App .WeatherAppDay {
+.App .weatherAppDay {
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 15px;
@@ -21,7 +21,7 @@
   );
 }
 
-.App .WeatherAppNight {
+.App .weatherAppNight {
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 15px;
@@ -33,12 +33,20 @@
   );
 }
 
-.Footer .Footnote {
+.App .footnote {
   margin: 20px auto;
   text-align: center;
+  font-size: 1.5rem;
 }
 
-.Footer .OpenSourceLink {
+.App .openSourceLink {
   text-decoration: none;
   color: rgb(17, 113, 168);
+}
+
+@media (max-width: 768px) {
+  .App .weatherAppWrapper {
+    width: 100%;
+    margin: 0;
+  }
 }

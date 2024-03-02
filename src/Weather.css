@@ -1,27 +1,10 @@
-.Weather .Flex {
+.Weather .flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 40px 40px 70px auto;
+  margin: 40px 40px 50px auto;
   justify-content: flex-end;
   align-items: center;
-  gap: 15px;
-}
-
-.Weather #CurrentLocationButton {
-  display: inline-block;
-  cursor: pointer;
-  background-color: white;
-  border-radius: 20px;
-  padding: 6px 10px;
-  color: rgba(0, 0, 0, 0.8);
-  border: 1px solid #cbd5e0;
-  line-height: 16px;
-  transition: all 100ms ease-in-out;
-}
-
-.Weather #CurrentLocationButton:hover {
-  background-color: #f0eeee;
 }
 
 .Weather .search-bar {
@@ -36,7 +19,7 @@
 }
 
 .Weather .search-input {
-  font-size: 15px;
+  font-size: 1.5rem;
   color: black;
   margin-left: 8px;
   outline: none;
@@ -61,10 +44,9 @@
 }
 
 @media (max-width: 576px) {
-  .Weather .Flex {
-    margin: 20px auto 40px;
+  .Weather .flex {
+    margin: 20px auto 60px;
     justify-content: center;
     align-items: center;
-    gap: 15px;
   }
 }

@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ForecastInfo.css";
+
 export default function ForecastInfo(props) {
   function maxTemperature() {
     let temperature = Math.round(props.data.temperature.maximum);

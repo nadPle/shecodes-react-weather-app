@@ -42,14 +42,14 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <div className="Flex">
-          <form id="EnterCityForm" onSubmit={handleSubmit}>
+        <div className="flex">
+          <form id="enterCityForm" onSubmit={handleSubmit}>
             <div className="search-bar">
               <input
                 className="search-input"
                 type="text"
                 placeholder="Enter a city"
-                id="EnteredCity"
+                id="enteredCity"
                 autoComplete="off"
                 onChange={handleCityChange}
               />
@@ -60,11 +60,6 @@ export default function Weather(props) {
               />{" "}
             </div>
           </form>
-          <button id="CurrentLocationButton" title="Use current location">
-            <span className="material-symbols-outlined">
-              location_searching
-            </span>
-          </button>
         </div>
         <WeatherInfo data={weatherData} />
         <Forecast city={weatherData.city} />

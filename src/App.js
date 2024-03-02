@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Weather from "./Weather";
 import "./App.css";
 
@@ -17,24 +17,22 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className="Container">
-        <div className="WeatherAppWrapper">
-          <div className={`WeatherApp${background}`} id="WeatherAppBox">
-            <Weather cityDefault="London" onTimeUpdate={handleTimeUpdate} />
+      <div className="weatherAppWrapper">
+        <div className={`weatherApp${background}`} id="weatherAppBox">
+          <Weather cityDefault="London" onTimeUpdate={handleTimeUpdate} />
 
-            <div className="Footer">
-              <p className="Footnote">
-                <a
-                  className="OpenSourceLink"
-                  href="https://github.com/nadPle/shecodes-react-weather-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Open-source code
-                </a>{" "}
-                by Nadine Plepel
-              </p>
-            </div>
+          <div className="footer">
+            <p className="footnote">
+              <a
+                className="openSourceLink"
+                href="https://github.com/nadPle/shecodes-react-weather-app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open-source code
+              </a>{" "}
+              by Nadine Plepel
+            </p>
           </div>
         </div>
       </div>

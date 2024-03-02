@@ -1,33 +1,16 @@
-.Forecast .WeatherForecast {
-  text-align: center;
-  font-weight: 400;
-  margin-bottom: 40px;
-  font-size: 18px;
-  padding: 0 50px;
-}
-
-.Forecast .forecastIcon {
-  width: 90px;
-  margin-bottom: 8px;
-}
-.Forecast .forecastTempHigh {
-  font-weight: bold;
-}
-
 .Forecast {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   font-weight: 400;
   margin-bottom: 60px;
-  font-size: 18px;
+  font-size: 1.6rem;
   padding: 0 40px;
 }
 
 @media (max-width: 576px) {
   .Forecast {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
   }
 }
