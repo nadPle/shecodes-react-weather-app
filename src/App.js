@@ -19,7 +19,7 @@ export default function App() {
     <div className="App">
       <div className="weatherAppWrapper">
         <div className={`weatherApp${background}`} id="weatherAppBox">
-          <Weather cityDefault="London" onTimeUpdate={handleTimeUpdate} />
+          <Weather cityDefault="Solothurn" onTimeUpdate={handleTimeUpdate} />
 
           <div className="footer">
             <p className="footnote">
